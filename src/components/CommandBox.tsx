@@ -11,6 +11,12 @@ export default function CommandBox({
   const canonicalCommand = command.replace(/\s[\[|<].*/, "");
   const anchor = canonicalCommand.replaceAll("/", "").replaceAll(" ", "-");
 
+  const flagBox = flags?.map((flag) => (
+    <li key={flag.flag}>
+      <code>{flag.flag}</code>: {flag.usage}
+    </li>
+  ));
+
   return (
     <>
       <section>
@@ -19,10 +25,26 @@ export default function CommandBox({
             <code>{canonicalCommand}</code>
           </a>
         </h3>
+
+        <h4>コマンド</h4>
         <pre>{command}</pre>
-        <p>
-          権限: <code>{perm}</code>
-        </p>
+
+        <h4>権限</h4>
+        <ul>
+          <li>
+            <code>{perm}</code>
+          </li>
+        </ul>
+
+        {flags ? (
+          <>
+            <h4>フラグ</h4>
+            <ul>{flagBox}</ul>
+          </>
+        ) : (
+          <></>
+        )}
+
         {translated ? (
           <></>
         ) : (
@@ -32,6 +54,8 @@ export default function CommandBox({
             </p>
           </WarningBox>
         )}
+
+        <h4>説明</h4>
         {usage}
       </section>
     </>
