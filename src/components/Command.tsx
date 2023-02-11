@@ -2,7 +2,7 @@ import { ReactNode } from "react";
 
 export type Command = {
   command: string;
-  perm?: string;
+  perm?: string[] | string;
   flags?: Flag[];
   usage?: ReactNode;
   translated?: boolean;

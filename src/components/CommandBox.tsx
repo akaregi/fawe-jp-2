@@ -31,9 +31,19 @@ export default function CommandBox({
 
         <h4>権限</h4>
         <ul>
-          <li>
-            <code>{perm}</code>
-          </li>
+          {typeof perm === "string" ? (
+            <li>
+              <code>{perm}</code>
+            </li>
+          ) : (
+            perm.map((p) => (
+              <>
+                <li>
+                  <code>{p}</code>
+                </li>
+              </>
+            ))
+          )}
         </ul>
 
         {flags ? (
