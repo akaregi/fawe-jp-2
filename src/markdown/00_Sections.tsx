@@ -2,11 +2,8 @@ import { Command } from "@/components/Command";
 import CommandBox from "@/components/CommandBox";
 import Introduction from "./01_Introduction.mdx";
 import { UncategorizedCommand } from "./02_Uncategorized";
-import Uncategorized from "./02_Uncategorized.mdx";
 import { WorldEditCommand } from "./03_WorldEdit";
-import WorldEdit from "./03_WorldEdit.mdx";
 import { UtilityCommand } from "./04_Utility";
-import Utility from "./04_Utility.mdx";
 import Regions from "./05_Regions.mdx";
 import Selection from "./06_Selection.mdx";
 import History from "./07_History.mdx";
@@ -21,7 +18,7 @@ import Snapshot from "./15_Snapshot.mdx";
 import SnapshotUtil from "./16_SnapshotUtil.mdx";
 import Scripting from "./17_Scripting.mdx";
 import Chunk from "./18_Chunk.mdx";
-import Options from "./19_Options.mdx";
+import { OptionsCommand } from "./19_Options";
 import BrushOptions from "./20_BrushOptions.mdx";
 import Tool from "./21_Tool.mdx";
 import Brush from "./22_Brush.mdx";
@@ -45,14 +42,19 @@ export default function Section() {
       <hr />
       <Introduction />
       <hr />
-      <h2>カテゴリ外</h2>
+
+      <h2 id="toc-uncategorized">カテゴリ外</h2>
       {toBox(UncategorizedCommand)}
       <hr />
-      <h2>WorldEdit</h2>
+
+      <h2 id="toc-worldedit">WorldEdit</h2>
       {toBox(WorldEditCommand)}
       <hr />
-      <h2>ユーティリティ</h2>
+
+      <h2 id="toc-utility">ユーティリティ</h2>
       {toBox(UtilityCommand)}
+      <hr />
+
       <Regions />
       <Selection />
       <History />
@@ -67,7 +69,11 @@ export default function Section() {
       <SnapshotUtil />
       <Scripting />
       <Chunk />
-      <Options />
+
+      <h2 id="toc-option">オプション</h2>
+      {toBox(OptionsCommand)}
+      <hr />
+
       <BrushOptions />
       <Tool />
       <Brush />
