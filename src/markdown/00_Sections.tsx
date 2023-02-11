@@ -11,17 +11,12 @@ import Schematic from "./08_Schematic.mdx";
 import Clipboard from "./09_Clipboard.mdx";
 import Generation from "./10_Generation.mdx";
 import Biome from "./11_Biome.mdx";
-import Anvil from "./12_Anvil.mdx";
-import Superpickaxe from "./13_Superpickaxe.mdx";
-import Navigation from "./14_Navigation.mdx";
+import { SuperpickaxeCommand } from "./13_Superpickaxe";
+import { NavigationCommand } from "./14_Navigation";
 import { SnapshotCommand } from "./15_Snapshot";
-import Snapshot from "./15_Snapshot.mdx";
 import { SnapshotUtilCommand } from "./16_SnapshotUtil";
-import SnapshotUtil from "./16_SnapshotUtil.mdx";
 import { ScriptingCommand } from "./17_Scripting";
-import Scripting from "./17_Scripting.mdx";
 import { ChunkCommand } from "./18_Chunk";
-import Chunk from "./18_Chunk.mdx";
 import { OptionsCommand } from "./19_Options";
 import BrushOptions from "./20_BrushOptions.mdx";
 import Tool from "./21_Tool.mdx";
@@ -66,9 +61,14 @@ export default function Section() {
       <Clipboard />
       <Generation />
       <Biome />
-      <Anvil />
-      <Superpickaxe />
-      <Navigation />
+
+      <h2 id="toc-superpickaxe">スーパーピッケル</h2>
+      {toBox(SuperpickaxeCommand)}
+      <hr />
+
+      <h2 id="toc-navigation">ナビゲーション</h2>
+      {toBox(NavigationCommand)}
+      <hr />
 
       <h2 id="toc-snapshot">スナップショット</h2>
       {toBox(SnapshotCommand)}
