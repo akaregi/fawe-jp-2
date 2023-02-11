@@ -7,6 +7,7 @@ import { UtilityCommand } from "./04_Utility";
 import Regions from "./05_Regions.mdx";
 import Selection from "./06_Selection.mdx";
 import History from "./07_History.mdx";
+import { SchematicCommand } from "./08_Schematic";
 import Schematic from "./08_Schematic.mdx";
 import Clipboard from "./09_Clipboard.mdx";
 import Generation from "./10_Generation.mdx";
@@ -57,7 +58,11 @@ export default function Section() {
       <Regions />
       <Selection />
       <History />
-      <Schematic />
+
+      <h2 id="toc-schematic">スキーマティック</h2>
+      {toBox(SchematicCommand)}
+      <hr />
+
       <Clipboard />
       <Generation />
 
