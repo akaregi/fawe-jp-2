@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Section from "@/markdown/00_Sections";
+import TOC from "@/components/TOC";
 
 const description =
   "Bukkit/Spigot のプラグイン FastAsyncWorldEdit(FAWE) の説明書です。" +
@@ -17,8 +18,11 @@ export default function Home() {
 
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="prose">
-        <Section />
+      <main className="prose content">
+        <TOC />
+        <article>
+          <Section />
+        </article>
       </main>
     </>
   );

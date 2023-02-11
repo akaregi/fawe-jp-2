@@ -2,21 +2,25 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+code {
+  padding: 0.1rem 0.5rem;
+  background-color: #eff0f4;
+  border-radius: 5px;
+}
+
 .prose {
-  max-width: 768px;
+  max-width: 1024px;
   margin: 10vh auto;
   padding: 1rem;
+
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr minmax(0, 2fr);
 }
 
 .prose-xl :where(pre):not(:where([class~="not-prose"] *)),
 .prose-xl :where(p):not(:where([class~="not-prose"] *)) {
   margin: 1rem 0;
-}
-
-code {
-  padding: 0.1rem 0.5rem;
-  background-color: #eff0f4;
-  border-radius: 5px;
 }
 
 .prose :where(code):not(:where([class~="not-prose"] *))::before {
