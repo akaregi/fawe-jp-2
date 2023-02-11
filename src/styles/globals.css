@@ -2,20 +2,39 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+body {
+  margin: 0;
+}
+
 code {
   padding: 0.1rem 0.5rem;
-  background-color: #eff0f4;
-  border-radius: 5px;
+  @apply bg-slate-100;
+  @apply rounded;
+}
+
+.toc {
+  position: sticky;
+  top: 0;
+
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.is-active-link {
+  @apply text-blue-800;
 }
 
 .prose {
   max-width: 1024px;
-  margin: 10vh auto;
-  padding: 1rem;
+  margin: 0 auto;
 
   display: grid;
-  gap: 10px;
+  gap: 50px;
   grid-template-columns: 1fr minmax(0, 2fr);
+}
+
+.commands {
+  @apply my-10;
 }
 
 @media screen and (max-width: 768px) {

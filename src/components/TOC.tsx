@@ -7,6 +7,7 @@ export default function TOC() {
       tocSelector: ".toc",
       contentSelector: ".content",
       headingSelector: "h2, h3",
+      disableTocScrollSync: true,
     });
 
     return () => tocbot.destroy();

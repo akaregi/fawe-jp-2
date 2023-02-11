@@ -20,7 +20,7 @@ export default function Home() {
       </Head>
       <main className="prose content">
         <TOC />
-        <article>
+        <article className="commands">
           <Section />
         </article>
       </main>
