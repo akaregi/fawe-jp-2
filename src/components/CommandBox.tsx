@@ -6,13 +6,13 @@ export default function CommandBox({
   flags,
   usage,
 }: Command) {
-  const canonicalCommand = command.replace(/\s.*/, "");
+  const canonicalCommand = command.replace(/\s[\[|<].*/, "");
   const anchor = canonicalCommand.replaceAll("/", "").replaceAll(" ", "-");
 
   return (
     <>
-      <section id={`command-${anchor}`}>
-        <h3>
+      <section>
+        <h3 id={`command-${anchor}`}>
           <a href={`#command-${anchor}`} className="no-underline">
             <code>{canonicalCommand}</code>
           </a>
