@@ -18,6 +18,16 @@ code {
   grid-template-columns: 1fr minmax(0, 2fr);
 }
 
+@media screen and (max-width: 768px) {
+  .toc {
+    display: none;
+  }
+
+  .prose {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
 .prose-xl :where(pre):not(:where([class~="not-prose"] *)),
 .prose-xl :where(p):not(:where([class~="not-prose"] *)) {
   margin: 1rem 0;
