@@ -1,10 +1,12 @@
 import { Command } from "./Command";
+import WarningBox from "./WarningBox";
 
 export default function CommandBox({
   command,
   perm = "?",
   flags,
   usage,
+  translated = true,
 }: Command) {
   const canonicalCommand = command.replace(/\s[\[|<].*/, "");
   const anchor = canonicalCommand.replaceAll("/", "").replaceAll(" ", "-");
@@ -21,7 +23,15 @@ export default function CommandBox({
         <p>
           権限: <code>{perm}</code>
         </p>
-
+        {translated ? (
+          <></>
+        ) : (
+          <WarningBox>
+            <p>
+              <strong>注意</strong>：未翻訳です。
+            </p>
+          </WarningBox>
+        )}
         {usage}
       </section>
     </>

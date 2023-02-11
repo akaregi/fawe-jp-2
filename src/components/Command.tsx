@@ -5,6 +5,7 @@ export type Command = {
   perm?: string;
   flags?: Flag[];
   usage?: ReactNode;
+  translated?: boolean;
 };
 
 type Flag = {
