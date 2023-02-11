@@ -10,6 +10,7 @@ import History from "./07_History.mdx";
 import Schematic from "./08_Schematic.mdx";
 import Clipboard from "./09_Clipboard.mdx";
 import Generation from "./10_Generation.mdx";
+import { BiomeCommand } from "./11_Biome";
 import Biome from "./11_Biome.mdx";
 import { SuperpickaxeCommand } from "./13_Superpickaxe";
 import { NavigationCommand } from "./14_Navigation";
@@ -60,7 +61,10 @@ export default function Section() {
       <Schematic />
       <Clipboard />
       <Generation />
-      <Biome />
+
+      <h2 id="toc-biome">バイオーム</h2>
+      {toBox(BiomeCommand)}
+      <hr />
 
       <h2 id="toc-superpickaxe">スーパーピッケル</h2>
       {toBox(SuperpickaxeCommand)}
