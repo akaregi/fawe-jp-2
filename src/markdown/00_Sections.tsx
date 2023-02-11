@@ -1,6 +1,6 @@
 import { Command } from "@/components/Command";
 import CommandBox from "@/components/CommandBox";
-import Introduction from "./01_Introduction.mdx";
+import Introduction from "./01_Introduction.md";
 import { UncategorizedCommand } from "./02_Uncategorized";
 import { WorldEditCommand } from "./03_WorldEdit";
 import { UtilityCommand } from "./04_Utility";
