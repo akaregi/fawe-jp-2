@@ -11,7 +11,6 @@ import Schematic from "./08_Schematic.mdx";
 import Clipboard from "./09_Clipboard.mdx";
 import Generation from "./10_Generation.mdx";
 import { BiomeCommand } from "./11_Biome";
-import Biome from "./11_Biome.mdx";
 import { SuperpickaxeCommand } from "./13_Superpickaxe";
 import { NavigationCommand } from "./14_Navigation";
 import { SnapshotCommand } from "./15_Snapshot";
