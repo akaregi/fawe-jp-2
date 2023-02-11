@@ -14,9 +14,13 @@ import Biome from "./11_Biome.mdx";
 import Anvil from "./12_Anvil.mdx";
 import Superpickaxe from "./13_Superpickaxe.mdx";
 import Navigation from "./14_Navigation.mdx";
+import { SnapshotCommand } from "./15_Snapshot";
 import Snapshot from "./15_Snapshot.mdx";
+import { SnapshotUtilCommand } from "./16_SnapshotUtil";
 import SnapshotUtil from "./16_SnapshotUtil.mdx";
+import { ScriptingCommand } from "./17_Scripting";
 import Scripting from "./17_Scripting.mdx";
+import { ChunkCommand } from "./18_Chunk";
 import Chunk from "./18_Chunk.mdx";
 import { OptionsCommand } from "./19_Options";
 import BrushOptions from "./20_BrushOptions.mdx";
@@ -65,10 +69,22 @@ export default function Section() {
       <Anvil />
       <Superpickaxe />
       <Navigation />
-      <Snapshot />
-      <SnapshotUtil />
-      <Scripting />
-      <Chunk />
+
+      <h2 id="toc-snapshot">スナップショット</h2>
+      {toBox(SnapshotCommand)}
+      <hr />
+
+      <h2 id="toc-snapshot-utilities">スナップショットユーティリティ</h2>
+      {toBox(SnapshotUtilCommand)}
+      <hr />
+
+      <h2 id="toc-scripting">スクリプト</h2>
+      {toBox(ScriptingCommand)}
+      <hr />
+
+      <h2 id="toc-chunk">チャンク</h2>
+      {toBox(ChunkCommand)}
+      <hr />
 
       <h2 id="toc-option">オプション</h2>
       {toBox(OptionsCommand)}
