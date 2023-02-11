@@ -41,7 +41,7 @@ export const SchematicCommand: Command[] = [
   },
 
   {
-    command: "/schematic save [format] <filename>",
+    command: "/schematic save [フォーマット] <ファイル名>",
     perm: [
       "worldedit.clipboard.save",
       "worldedit.schematic.save",
@@ -51,7 +51,7 @@ export const SchematicCommand: Command[] = [
   },
 
   {
-    command: "/schematic unload [file]",
+    command: "/schematic unload [ファイル]",
     perm: ["worldedit.clipboard.clear", "worldedit.schematic.clear"],
     usage: <p>Remove a clipboard from your multi-clipboard</p>,
     translated: false,
