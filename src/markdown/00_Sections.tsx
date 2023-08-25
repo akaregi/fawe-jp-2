@@ -4,11 +4,10 @@ import Introduction from "./01_Introduction.md";
 import { UncategorizedCommand } from "./02_Uncategorized";
 import { WorldEditCommand } from "./03_WorldEdit";
 import { UtilityCommand } from "./04_Utility";
-import Regions from "./05_Regions.mdx";
+import { RegionCommand } from "./05_Regions";
 import Selection from "./06_Selection.mdx";
 import History from "./07_History.mdx";
 import { SchematicCommand } from "./08_Schematic";
-import Schematic from "./08_Schematic.mdx";
 import Clipboard from "./09_Clipboard.mdx";
 import Generation from "./10_Generation.mdx";
 import { BiomeCommand } from "./11_Biome";
@@ -55,7 +54,10 @@ export default function Section() {
       {toBox(UtilityCommand)}
       <hr />
 
-      <Regions />
+      <h2 id="toc-region">領域</h2>
+      {toBox(RegionCommand)}
+      <hr />
+
       <Selection />
       <History />
 
