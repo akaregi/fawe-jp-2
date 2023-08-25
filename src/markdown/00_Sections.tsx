@@ -18,13 +18,13 @@ import { SnapshotUtilCommand } from "./16_SnapshotUtil";
 import { ScriptingCommand } from "./17_Scripting";
 import { ChunkCommand } from "./18_Chunk";
 import { OptionsCommand } from "./19_Options";
-import BrushOptions from "./20_BrushOptions.md";
-import Tool from "./21_Tool.md";
+// import { BrushOptionsCommand } from "./20_BrushOptions";
+import { ToolCommand } from "./21_Tool";
 import Brush from "./22_Brush.md";
 import Masks from "./23_Masks.md";
-import Pattens from "./24_Patterns.md";
-import Transforms from "./25_Transforms.md";
-import CFI from "./26_CFI.md";
+import { PatternsCommand } from "./24_Patterns";
+// import { TransformsCommand } from "./25_Transforms";
+// import { CFICommand } from "./26_CFI";
 
 export default function Section() {
   return (
@@ -39,6 +39,7 @@ export default function Section() {
         説明書
       </h1>
       <hr />
+
       <Introduction />
       <hr />
 
@@ -100,13 +101,25 @@ export default function Section() {
       {toBox(OptionsCommand)}
       <hr />
 
-      <BrushOptions />
-      <Tool />
+      <h2 id="toc-brushoptions">ブラシオプション</h2>
+      {toBox(PatternsCommand)}
+      <hr />
+
+      <h2 id="tool-command">ツール</h2>
+      {toBox(ToolCommand)}
+      <hr />
+
       <Brush />
       <Masks />
-      <Pattens />
-      <Transforms />
-      <CFI />
+
+      <h2 id="toc-patterns">パターン</h2>
+      <hr />
+
+      <h2 id="toc-transoforms">変形(Transform)</h2>
+      <hr />
+
+      <h2 id="toc-cfi">CFI</h2>
+      <hr />
     </>
   );
 }
