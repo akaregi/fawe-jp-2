@@ -5,11 +5,11 @@ import { UncategorizedCommand } from "./02_Uncategorized";
 import { WorldEditCommand } from "./03_WorldEdit";
 import { UtilityCommand } from "./04_Utility";
 import { RegionCommand } from "./05_Regions";
-import Selection from "./06_Selection.mdx";
-import History from "./07_History.mdx";
+import Selection from "./06_Selection.md";
+import History from "./07_History.md";
 import { SchematicCommand } from "./08_Schematic";
-import Clipboard from "./09_Clipboard.mdx";
-import Generation from "./10_Generation.mdx";
+import Clipboard from "./09_Clipboard.md";
+import Generation from "./10_Generation.md";
 import { BiomeCommand } from "./11_Biome";
 import { SuperpickaxeCommand } from "./13_Superpickaxe";
 import { NavigationCommand } from "./14_Navigation";
@@ -18,13 +18,13 @@ import { SnapshotUtilCommand } from "./16_SnapshotUtil";
 import { ScriptingCommand } from "./17_Scripting";
 import { ChunkCommand } from "./18_Chunk";
 import { OptionsCommand } from "./19_Options";
-import BrushOptions from "./20_BrushOptions.mdx";
-import Tool from "./21_Tool.mdx";
-import Brush from "./22_Brush.mdx";
-import Masks from "./23_Masks.mdx";
-import Pattens from "./24_Patterns.mdx";
-import Transforms from "./25_Transforms.mdx";
-import CFI from "./26_CFI.mdx";
+import BrushOptions from "./20_BrushOptions.md";
+import Tool from "./21_Tool.md";
+import Brush from "./22_Brush.md";
+import Masks from "./23_Masks.md";
+import Pattens from "./24_Patterns.md";
+import Transforms from "./25_Transforms.md";
+import CFI from "./26_CFI.md";
 
 export default function Section() {
   return (
