@@ -32,9 +32,7 @@ export const WorldEditCommand: Command[] = [
     usage: (
       <p>
         デバッグ情報を
-        <a href="https://athion.net/ISPaster/paste">
-          https://athion.net/ISPaster/paste
-        </a>
+        <a href="https://athion.net/ISPaster/paste">https://athion.net/ISPaster/paste</a>
         にアップロードする。
       </p>
     ),

@@ -9,8 +9,7 @@ export const UtilityCommand: Command[] = [
         <p>
           指定された種類のエンティティをすべて除去する。
           <br />
-          種類は次の通り: projectiles, items, paintings, boats, minecarts, tnt,
-          xp (など)。
+          種類は次の通り: projectiles, items, paintings, boats, minecarts, tnt, xp (など)。
         </p>
       </>
     ),
@@ -141,9 +140,7 @@ export const UtilityCommand: Command[] = [
     perm: "worldedit.butcher",
     usage: (
       <>
-        <p>
-          近隣のMobを殺す。半径を指定しなければデフォルトの設定が適用される。
-        </p>
+        <p>近隣のMobを殺す。半径を指定しなければデフォルトの設定が適用される。</p>
         <ul>
           <li>-p : ペットを含める </li>
           <li>-n : NPCを含める </li>

@@ -17,8 +17,8 @@ export const OptionsCommand: Command[] = [
     perm: "worldedit.global-mask",
     usage: (
       <p>
-        The global source mask applies to all edits you do and masks based on
-        the source blocks (e.g. the blocks in your clipboard)
+        The global source mask applies to all edits you do and masks based on the source blocks (e.g. the blocks in your
+        clipboard)
       </p>
     ),
     translated: false,
@@ -55,8 +55,8 @@ export const OptionsCommand: Command[] = [
     perm: "worldedit.global-mask",
     usage: (
       <p>
-        The global destination mask applies to all edits you do and masks based
-        on the destination blocks (i.e. the blocks in the world).
+        The global destination mask applies to all edits you do and masks based on the destination blocks (i.e. the
+        blocks in the world).
       </p>
     ),
     translated: false,

@@ -42,11 +42,7 @@ export const SchematicCommand: Command[] = [
 
   {
     command: "/schematic save [フォーマット] <ファイル名>",
-    perm: [
-      "worldedit.clipboard.save",
-      "worldedit.schematic.save",
-      "worldedit.schematic.save.other",
-    ],
+    perm: ["worldedit.clipboard.save", "worldedit.schematic.save", "worldedit.schematic.save.other"],
     usage: <p>スキーマティックをクリップボードに保存する。</p>,
   },
 
@@ -59,11 +55,7 @@ export const SchematicCommand: Command[] = [
 
   {
     command: "/schematic loadall [<format>] <filename|url>",
-    perm: [
-      "worldedit.clipboard.load",
-      "worldedit.schematic.load",
-      "worldedit.schematic.upload",
-    ],
+    perm: ["worldedit.clipboard.load", "worldedit.schematic.load", "worldedit.schematic.upload"],
     usage: <p>Load multiple clipboards</p>,
     translated: false,
   },
