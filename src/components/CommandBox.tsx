@@ -1,13 +1,7 @@
 import { Command } from "./Command";
 import WarningBox from "./WarningBox";
 
-export default function CommandBox({
-  command,
-  perm = "?",
-  flags,
-  usage,
-  translated = true,
-}: Command) {
+export default function CommandBox({ command, perm = "?", flags, usage, translated = true }: Command) {
   const canonicalCommand = command.replace(/\s[\[|<].*/, "");
   const anchor = canonicalCommand.replaceAll("/", "").replaceAll(" ", "-");
 
