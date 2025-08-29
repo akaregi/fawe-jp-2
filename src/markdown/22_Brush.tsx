@@ -151,7 +151,7 @@ export default function Brush() {
     <>
       <h2 id="toc-brush">ブラシ</h2>
       <p>
-        <code>//brush</code> , <code>/brush</code> , <code>//br</code> , <code>/br</code> で実行できる。下記では{" "}
+        <code>{"//brush"}</code> , <code>/brush</code> , <code>{"//br"}</code> , <code>/br</code> で実行できる。下記では{" "}
         <code>/br</code> と略する。
       </p>
       <p>

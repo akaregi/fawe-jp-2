@@ -60,7 +60,7 @@ export const ClipboardCommand: Command[] = [
       <>
         <p>領域をコピーしクリップボードに保存する。</p>
         <p>
-          <strong>//paste 実行後にはじめて領域が切り取られる</strong>。
+          <strong>{"//paste"} 実行後にはじめて領域が切り取られる</strong>。
         </p>
         <p>エンティティを貼り付けたとしても、それを //undo することはできない。</p>
       </>

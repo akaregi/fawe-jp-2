@@ -130,7 +130,8 @@ export default function Masks() {
         これにより、ブロックの編集範囲を限定することができる。
       </p>
       <p>
-        平たく言うと <strong>//set で敷き詰めるブロックや、 /br sphere で生成するブロックの置く場所を制限する</strong>。
+        平たく言うと
+        <strong>{"//set"} で敷き詰めるブロックや、 /br sphere で生成するブロックの置く場所を制限する</strong>。
       </p>
       <p>
         , か & でマスクを複数指定できる(即ち /mask 2,3 など)。 ,
