@@ -1,15 +1,8 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 body {
   margin: 0;
-}
-
-code {
-  padding: 0.1rem 0.5rem;
-  @apply bg-slate-100;
-  @apply rounded;
 }
 
 .toc {
