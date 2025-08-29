@@ -6,19 +6,17 @@
 
 誤記の訂正や改善点の意見を歓迎いたします。意見は [GitHub](https://github.com/akaregi/fawe-jp-2) の Issue / Pull request で受け付けています。
 
-- 2023 年 2 月 11 日現在、ウェブサイトを改修中です。体裁が途中で変わったりしていますがご了承下さい。
-- アドレスを変更しました。`github.io` のアドレスで参照されている方は、`vercel.app`
-  のアドレスで参照し直してください。
+- 2025 年 8 月 29 日現在、ウェブサイトを改修中です。
+  体裁が途中で変わったりしていますがご了承下さい。
 
 ### 翻訳者
 
 - 名前 : あかれぎ（IGN: AkagiCrafter）
-- Fediverse : `@nanigashi@council.azure.icu`
 
 ### 謝辞
 
-- この説明書は[公式の Wiki のコマンドページ](https://intellectualsites.github.io/fastasyncworldedit-documentation/README.html)を参考にしている。
-- スクリーンショットの一部に **Mizuno** 氏による [**Mizuno's 16 Craft**](http://forum.minecraftuser.jp/viewtopic.php?t=30945) を利用している。氏の努力に敬意を表します。
+- この説明書は[公式のコマンドページ](https://intellectualsites.github.io/fastasyncworldedit-documentation/README.html)を参考にしています。
+- スクリーンショットの一部に **Mizuno** 氏による [**Mizuno's 16 Craft**](http://forum.minecraftuser.jp/viewtopic.php?t=30945) を利用しています。ありがとうございます！
 
 また、FAWE の開発に参画しているすべての方に感謝申し上げます。
 

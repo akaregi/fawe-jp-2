@@ -5,11 +5,11 @@ import { UncategorizedCommand } from "./02_Uncategorized";
 import { WorldEditCommand } from "./03_WorldEdit";
 import { UtilityCommand } from "./04_Utility";
 import { RegionCommand } from "./05_Regions";
-import Selection from "./06_Selection.md";
-import History from "./07_History.md";
+import { SelectionCommand } from "./06_Selection";
+import { HistoryCommand } from "./07_History";
 import { SchematicCommand } from "./08_Schematic";
-import Clipboard from "./09_Clipboard.md";
-import Generation from "./10_Generation.md";
+import { ClipboardCommand } from "./09_Clipboard";
+import { GenerationCommand } from "./10_Generation";
 import { BiomeCommand } from "./11_Biome";
 import { SuperpickaxeCommand } from "./13_Superpickaxe";
 import { NavigationCommand } from "./14_Navigation";
@@ -20,8 +20,8 @@ import { ChunkCommand } from "./18_Chunk";
 import { OptionsCommand } from "./19_Options";
 // import { BrushOptionsCommand } from "./20_BrushOptions";
 import { ToolCommand } from "./21_Tool";
-import Brush from "./22_Brush.md";
-import Masks from "./23_Masks.md";
+import Brush, { BrushCommand } from "./22_Brush";
+import Masks, { MaskCommand } from "./23_Masks";
 import { PatternsCommand } from "./24_Patterns";
 // import { TransformsCommand } from "./25_Transforms";
 // import { CFICommand } from "./26_CFI";
@@ -59,15 +59,25 @@ export default function Section() {
       {toBox(RegionCommand)}
       <hr />
 
-      <Selection />
-      <History />
+      <h2 id="toc-selection">領域選択</h2>
+      {toBox(SelectionCommand)}
+      <hr />
+
+      <h2 id="toc-history">履歴</h2>
+      {toBox(HistoryCommand)}
+      <hr />
 
       <h2 id="toc-schematic">スキーマティック</h2>
       {toBox(SchematicCommand)}
       <hr />
 
-      <Clipboard />
-      <Generation />
+      <h2 id="toc-clipboard">クリップボード</h2>
+      {toBox(ClipboardCommand)}
+      <hr />
+
+      <h2 id="toc-generation">地形生成</h2>
+      {toBox(GenerationCommand)}
+      <hr />
 
       <h2 id="toc-biome">バイオーム</h2>
       {toBox(BiomeCommand)}
@@ -110,7 +120,12 @@ export default function Section() {
       <hr />
 
       <Brush />
+      {toBox(BrushCommand)}
+      <hr />
+
       <Masks />
+      {toBox(MaskCommand)}
+      <hr />
 
       <h2 id="toc-patterns">パターン</h2>
       <hr />
@@ -125,5 +140,5 @@ export default function Section() {
 }
 
 function toBox(commands: Command[]) {
-  return commands.map((c) => CommandBox(c));
+  return commands.map((c) => <CommandBox key={c.command} {...c} />);
 }

@@ -31,11 +31,9 @@ export default function CommandBox({ command, perm = "?", flags, usage, translat
             </li>
           ) : (
             perm.map((p) => (
-              <>
-                <li>
-                  <code>{p}</code>
-                </li>
-              </>
+              <li key={p}>
+                <code>{p}</code>
+              </li>
             ))
           )}
         </ul>
